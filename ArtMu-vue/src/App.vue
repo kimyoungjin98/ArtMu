@@ -1,24 +1,21 @@
 <template>
-  <h1>홈 화면</h1>
+  <Nav></Nav>
 </template>
 
 <script>
+import Nav from "./components/Nav.vue";
+
 export default {
   name: "App",
-  components: {},
+  components: { Nav },
   method: {},
-  created() {
-    fetch("http://localhost:8080")
-      .then((res) => res.text)
-      .then((res) => () => {
-        if (res == "OK") {
-          console.log("성공");
-        } else {
-          console.log("실패");
-        }
-      });
-  },
 };
 </script>
 
-<style></style>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+</style>

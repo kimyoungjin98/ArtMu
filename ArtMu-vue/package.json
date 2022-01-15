@@ -10,7 +10,9 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "cors": "^2.8.5",
-    "vue": "^3.0.0"
+    "typescript": "^4.5.4",
+    "vue": "^3.0.0",
+    "vue-router": "^3.5.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
