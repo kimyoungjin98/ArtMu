@@ -2,7 +2,10 @@
   <nav class="main_nav">
     <p class="main_logo">ArtMu</p>
     <ul class="main_ul">
-      <li v-for="menu in menus" :key="menu" class="main_li">{{ menu }}</li>
+      <li><router-link to="/">Documents</router-link></li>
+      <li><router-link to="/designer">Designer</router-link></li>
+      <li><router-link to="/commision">Commision</router-link></li>
+      <li><router-link to="/notice">Notice</router-link></li>
     </ul>
   </nav>
 </template>
@@ -10,11 +13,6 @@
 <script>
 export default {
   name: "Nav",
-  data() {
-    return {
-      menus: ["Documents", "Designer", "Commission", "Notice"],
-    };
-  },
 };
 </script>
 
@@ -37,15 +35,18 @@ export default {
   margin-left: auto;
 }
 
-.main_li {
+.main_ul li {
   font-size: 25px;
-  color: white;
   margin: 0 40px;
 }
 
-.main_li:hover {
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+li a:hover {
   transition: 0.5s ease;
   color: brown;
-  cursor: pointer;
 }
 </style>

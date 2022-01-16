@@ -1,16 +1,7 @@
 import { createApp } from "vue";
 import App from "./App.vue";
+import router from "./router";
 
-const router = new VueRouter({
-  mode: "history",
-  routes: [
-    { path: "/doc", component: Documents },
-    { path: "/designer", component: Designer },
-  ],
-});
+const app = createApp(App);
 
-new Vue({
-  router: router,
-});
-
-createApp(App).mount("#app");
+app.use(router).mount("#app");
