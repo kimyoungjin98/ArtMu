@@ -1,5 +1,5 @@
 <template>
-  <nav class="main_nav">
+  <nav class="main_nav" @scroll="onScroll">
     <p class="main_logo">ArtMu</p>
     <ul class="main_ul">
       <li><router-link to="/">Documents</router-link></li>
@@ -13,14 +13,26 @@
 <script>
 export default {
   name: "Nav",
+  data() {
+    return {
+      scrollPosition: 0,
+    };
+  },
+  methods: {
+    onScroll(e) {
+      this.scrollPosition = e.target.scrollTop;
+      console.log(this.scrollPosition);
+    },
+  },
 };
 </script>
 
 <style>
 .main_nav {
   display: flex;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(39, 39, 39);
   padding: 35px;
+  width: 100%;
 }
 
 .main_logo {
