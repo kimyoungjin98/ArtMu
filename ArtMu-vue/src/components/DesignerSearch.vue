@@ -39,12 +39,6 @@ export default {
   background-color: white;
   border: none;
   right: 30px;
-  /* 
-  right: 20px;
-  color: black;
-  height: 50px;
-  padding: 5px;
-  width: 10vh; */
   outline: none;
   font-size: 20px;
 }
