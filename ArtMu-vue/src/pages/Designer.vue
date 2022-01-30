@@ -47,6 +47,18 @@ export default {
         {
           id: "@ddung2",
           name: "뚱이",
+          content: "아뇨 저는 뚱인데요?아뇨 저는 뚱인데요?아뇨 저는 뚱인데요?아뇨 저는 뚱인데요?아뇨 저는 뚱인데요?아뇨 저는 뚱인데요?아뇨 저는 뚱인데요?아뇨 저는 뚱인데요?",
+          img: require("../assets/뚱이.jpeg"),
+        },
+        {
+          id: "@ddung2",
+          name: "뚱이",
+          content: "아뇨 저는 뚱인데요?",
+          img: require("../assets/뚱이.jpeg"),
+        },
+        {
+          id: "@ddung2",
+          name: "뚱이",
           content: "아뇨 저는 뚱인데요?",
           img: require("../assets/뚱이.jpeg"),
         },
