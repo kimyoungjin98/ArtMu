@@ -2,7 +2,9 @@ package com.malcom.artmu.config;
 
 public class TwitterAPI_Sample {
 
-    public static final String CLIENT_ID = "YOUR TWITTER CLIENT ID";
-    public static final String CLIENT_SECRET = "YOUR TWITTER CLIENT SECRET";
-    public static final String BEARER_TOKEN = "GET/2/tweets/:id";
+    public static final String API_KEY = "YOUR TWITTER API_KEY";
+    public static final String API_KEY_SECRET = "YOUR TWITTER API_KEY_SECRET";
+    public static final String ACCESS_TOKEN = "YOUR TWITTER ACCESS_TOKEN";
+    public static final String ACCESS_TOKEN_SECRET = "YOUR TWITTER ACCESS_TOKEN_SECRET";
+
 }
