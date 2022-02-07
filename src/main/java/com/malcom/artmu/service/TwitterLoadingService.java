@@ -31,6 +31,7 @@ public class TwitterLoadingService {
                 .endTime(endLocalDateTime)
                 .build();
 
+        /** 특정 유저의 트윗 가져오기*/
         UserV2 userV2 = twitterClient.getUserFromUserName("@빼고 닉네임");
         System.out.println("아이디 로딩 체크");
         System.out.println("아이디 : " + userV2.getId());
@@ -45,6 +46,15 @@ public class TwitterLoadingService {
             System.out.println("=".repeat(10));
         }
 
-
+        /** 검색 */
+        String query = "#커미션";
+        TweetList tweetList2 = twitterClient.searchAllTweets(query);
+        System.out.println("트윗 로딩 체크2");
+        System.out.println("가져온 트윗 수2  : " + tweetList2.getData().size() );
+        for(TweetV2.TweetData tweet : tweetList2.getData()){
+            System.out.println("Id : " + tweet.getId());
+            System.out.println("text : " + tweet.getText());
+            System.out.println("=".repeat(10));
+        }
     }
 }
