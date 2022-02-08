@@ -18,7 +18,6 @@ public class HomeController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String home() {
         tService.TestTwitterLoading();
-        System.out.println("야 ㅡㅡ ");
 
         return null;
     }
